@@ -1,0 +1,24 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+.cxx/
+.externalNativeBuild/
+captures/
+*.apk
+*.aab
+*.jks
+*.keystore
+# Credentials and sensitive customer data
+.env
+.env.*
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.csv
+*.xlsx
+*.json.key

@@ -23,6 +23,7 @@ android {
 dependencies {
     implementation(project(":core:domain"))
     implementation(project(":core:database"))
+    implementation("androidx.room:room-runtime:2.7.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
     implementation(platform("androidx.compose:compose-bom:2025.04.01"))

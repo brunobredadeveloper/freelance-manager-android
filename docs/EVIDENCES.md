@@ -11,7 +11,7 @@
 | Repositórios Room | `RoomRepositories.kt`, `RoomClientRepository.kt` | Implementados; validação pendente |
 | Dashboard financeiro Compose | `app/src/main/.../MainActivity.kt` | Conectado ao Room; sem screenshot validada |
 | Cadastro de clientes e projetos | `WorkspaceViewModel.kt`, `MainActivity.kt` | Fluxo implementado; build e teste manual pendentes |
-| Contratos e parcelas | — | Apenas modelos e DAO; tela não implementada |
+| Contratos, parcelas e recebimentos | `BillingViewModel.kt`, `RoomBillingRepository.kt`, `MainActivity.kt` | Fluxos Compose implementados; testes manuais/build pendentes |
 | Anexos e evidências | — | Não implementado |
 | CI Android | `.github/workflows/android.yml` | Configurado; resultado de execução não confirmado |
 | APK de release | — | Não disponível |
@@ -25,4 +25,4 @@
 6. Não adicionar CPF, contrato verdadeiro, comprovante bancário ou dados privados em repositório público.
 
 ## Pendências prioritárias
-Build verde, testes Room instrumentados, validação de cadastro, tela de contratos/parcelas, anexos seguros, notificações reais, backup, acessibilidade e documentação final.
+Build verde, testes Room instrumentados, validação de cadastro, validação dos formulários de contratos/parcelas, anexos seguros, notificações reais, backup, acessibilidade e documentação final.

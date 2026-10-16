@@ -1,19 +1,17 @@
 # Evidências de implementação
 
-Este documento diferencia código versionado de funcionalidades efetivamente testadas.
+Este documento distingue código publicado de funcionalidades executadas e validadas.
 
-| Item | Evidência no repositório | Status |
+| Item | Código / evidência | Situação |
 |---|---|---|
-| Regras financeiras | `core/domain/.../Money.kt` | Implementado, aguardando execução CI |
-| Casos de teste financeiros | `core/domain/.../MoneyTest.kt` | Escritos, aguardando execução CI |
-| Tela inicial Compose | `app/.../MainActivity.kt` | Implementada, aguardando build e screenshot |
-| Pipeline Android | `.github/workflows/android.yml` | Configurado, execução ainda não verificada |
+| Regras financeiras | `core/domain/.../Money.kt` e `PortfolioSummary.kt` | Implementadas; testes ainda não executados/confirmados |
+| Testes financeiros | `core/domain/src/test/` | Escritos; CI pendente de validação |
+| Tela inicial Compose | `app/.../MainActivity.kt` | Código publicado; screenshot real pendente |
+| Banco local Room | `core/database/.../FinanceDatabase.kt` | Entidades, DAO e esquema v1 publicados; integração pendente |
+| Pipeline CI | `.github/workflows/android.yml` | Configurado; execução não verificada |
 | Cadastro de contratos | — | Não implementado |
-| Evidências/arquivos | — | Não implementado |
-| Alertas | — | Não implementado |
+| Upload de evidências | — | Não implementado |
+| Lembretes | — | Não implementado |
 
-## Procedimento para screenshots
-Executar APK em emulador/dispositivo, registrar screenshots **sem dados reais de clientes**, adicionar em `docs/assets/`, descrever fluxo, versão e dispositivo. Não utilizar mockups como prova de execução.
-
-## Execuções CI
-Consultar a aba Actions do GitHub. Só declarar build aprovado depois de verificação do run correspondente.
+## Política de evidências
+Screenshots só depois de executar o aplicativo em dispositivo ou emulador. Capturas devem usar dados fictícios, identificar build e dispositivo e ficar em `docs/assets/`. Falhas de CI precisam ser documentadas e corrigidas antes de declarar release pronto.

@@ -22,3 +22,8 @@ captures/
 *.csv
 *.xlsx
 *.json.key
+
+# Allow only deliberately reviewed, anonymized documentation screenshots
+!docs/assets/
+!docs/assets/*.png
+!docs/assets/*.jpg

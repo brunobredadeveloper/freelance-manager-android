@@ -103,6 +103,9 @@ interface FinanceDao {
     @Query("SELECT * FROM projects ORDER BY title")
     fun observeProjects(): Flow<List<ProjectEntity>>
 
+    @Query("SELECT * FROM contracts ORDER BY title")
+    fun observeContracts(): Flow<List<ContractEntity>>
+
     @Query("SELECT * FROM installments")
     fun observeInstallments(): Flow<List<InstallmentEntity>>
 

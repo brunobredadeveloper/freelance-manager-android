@@ -21,7 +21,7 @@ Centralizar clientes, contratos, escopos, entregáveis, evidências, pagamentos 
 - Dados reais de clientes, comprovantes e contratos não entram no GitHub público.
 
 ## Status
-Projeto em inicialização. Ainda não há APK ou build validado.
+MVP em desenvolvimento: dashboard financeiro, cadastro local de clientes/projetos/contratos/parcelas e registro de recebimentos já possuem código Compose + Room. **Build, testes de integração e APK ainda não foram validados.** Consulte [evidências](docs/EVIDENCES.md) e [checklist de release](docs/RELEASE_CHECKLIST.md).
 
 ## Próximos passos
 1. Gradle, app Compose e pipeline CI.

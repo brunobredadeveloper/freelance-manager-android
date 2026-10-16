@@ -4,4 +4,4 @@ dependencyResolutionManagement {
     repositories { google(); mavenCentral() }
 }
 rootProject.name = "FreelanceManager"
-include(":app", ":core:domain")
+include(":app", ":core:domain", ":core:database")
